@@ -1,6 +1,30 @@
 .App {
     background-color: var(--navy);
 }
+
+.section-title {
+    font-family: "NTR", sans-serif;
+    color: var(--lightest-slate);
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.section-header {
+    display: flex;
+    padding-bottom: 42px;
+    width: 100vw;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 300px;
+    margin-top: 30px;
+    height: 2px;
+    margin-left: 20px;
+    background-color: var(--lightest-navy);
+}
+
 html {
     scroll-behavior: smooth;
 }
