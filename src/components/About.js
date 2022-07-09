@@ -2,19 +2,7 @@ import React from "react";
 import "../styles/About.css";
 
 class About extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            expanded: true,
-            activeKey: "1"
-        };
-        this.handleSelect = this.handleSelect.bind(this);
-    }
-    handleSelect(eventKey) {
-        this.setState({
-            activeKey: eventKey
-        });
-    }
+
     render() {
         const one = (
             <p>
@@ -60,6 +48,7 @@ class About extends React.Component {
 
         return (
             <div id="about">
+
                     <div className="section-header ">
                         <span className="section-title">/ about me</span>
                     </div>
@@ -70,16 +59,19 @@ class About extends React.Component {
                             <ul className="tech-stack">
                                 {tech_stack.map(function (tech_item, i) {
                                     return (
+
                                             <li>{tech_item}</li>
+
                                     );
                                 })}
                             </ul>
                             {[two]}
                         </div>
                         <div className="about-image">
-                            <img src={"/assets/me2.jpg"} />
+                            <img src={process.env.PUBLIC_URL + "/images/selfie.jpg"} alt="selfie"/>
                         </div>
                     </div>
+
             </div>
         );
     }

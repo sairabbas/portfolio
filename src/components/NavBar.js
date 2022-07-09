@@ -1,20 +1,19 @@
 import React from "react"
 import "../styles/NavBar.css"
-import NavBarData from "../data/NavBarData";
+import NavBarData from "../data/NavBarData"
 
 export default function NavBar(){
 
-    const links = [
-        <a href="#intro">/home</a>,
-        <a href="#about">/about</a>,
-        <a href="#experience">/experience</a>,
-        <a href="#projects">/software-creations</a>
-    ]
-
-    const navBarIcons = NavBarData.map(data => {
+    const sectionElements = NavBarData.data.sections.map( item => {
         return (
-            <a href={data.link} target="_blank">
-                {data.icon}
+            <a href={item.link}>{item.name}</a>
+        )
+    })
+
+    const iconElements = NavBarData.data.icons.map(item => {
+        return (
+            <a href={item.link} target="_blank">
+                {item.icon}
             </a>
         )
     })
@@ -22,11 +21,18 @@ export default function NavBar(){
     return (
         <div className="navbar">
             <div className="navbar-links">
-                {links}
+                {sectionElements}
             </div>
             <div className="navbar-icons">
-                {navBarIcons}
+                {iconElements}
             </div>
         </div>
     )
 }
+/*
+
+
+
+
+
+*/

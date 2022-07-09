@@ -7,7 +7,7 @@
 #about {
     padding-left: 15%;
     padding-right: 25%;
-    min-height: 30vh;
+    min-height: 60vh;
 }
 
 .about-description ul {
@@ -60,7 +60,7 @@
     height: auto;
     border-radius: 10px;
     margin-left: 30px;
-    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.4);
     border: none;
 }
 
