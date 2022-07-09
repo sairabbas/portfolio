@@ -1,11 +1,10 @@
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import React from "react";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 
 export default {
     data: {
-        sections:[
+        sections: [
             {
                 link: "#intro",
                 name: "/home"
@@ -23,7 +22,7 @@ export default {
                 name: "/software-creations"
             }
         ],
-        "icons": [
+        icons: [
             {
                 link: "mailto:sair_abbas@yahoo.com",
                 icon: <EmailRoundedIcon fontSize="large"/>

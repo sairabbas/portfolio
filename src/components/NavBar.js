@@ -4,9 +4,11 @@ import NavBarData from "../data/NavBarData"
 
 export default function NavBar(){
 
-    const sectionElements = NavBarData.data.sections.map( item => {
+    const sectionElements = NavBarData.data.sections.map(item => {
         return (
-            <a href={item.link}>{item.name}</a>
+            <a href={item.link}>
+                {item.name}
+            </a>
         )
     })
 
