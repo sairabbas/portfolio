@@ -3,7 +3,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 
 export default {
-    data: {
         sections: [
             {
                 link: "#intro",
@@ -36,5 +35,4 @@ export default {
                 icon: <GitHubIcon fontSize="large"/>
             }
         ]
-    }
 }

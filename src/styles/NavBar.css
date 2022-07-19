@@ -8,7 +8,7 @@
     bottom: 10%;
     background-color: transparent;
 }
-.navbar-links{
+.navbar-sections{
     display: flex;
     flex-direction: column;
     text-align: right;

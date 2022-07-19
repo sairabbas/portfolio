@@ -4,7 +4,7 @@ import NavBarData from "../data/NavBarData"
 
 export default function NavBar(){
 
-    const sectionElements = NavBarData.data.sections.map(item => {
+    const sectionElements = NavBarData.sections.map(item => {
         return (
             <a href={item.link}>
                 {item.name}
@@ -12,7 +12,7 @@ export default function NavBar(){
         )
     })
 
-    const iconElements = NavBarData.data.icons.map(item => {
+    const iconElements = NavBarData.icons.map(item => {
         return (
             <a href={item.link} target="_blank">
                 {item.icon}
@@ -22,7 +22,7 @@ export default function NavBar(){
 
     return (
         <div className="navbar">
-            <div className="navbar-links">
+            <div className="navbar-sections">
                 {sectionElements}
             </div>
             <div className="navbar-icons">
@@ -31,10 +31,3 @@ export default function NavBar(){
         </div>
     )
 }
-/*
-
-
-
-
-
-*/
