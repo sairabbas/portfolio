@@ -8,13 +8,7 @@ export default function Intro(){
     return (
         <div id="intro">
             <Typist avgTypingDelay={120}>
-                <span className="intro-greeting">
-                    {"hi, "}
-                        <span className="intro-name">
-                            {"Sair"}
-                        </span>
-                    {" here."}
-                </span>
+                <span className="intro-greeting"> hi, <span className="intro-name"> Sair </span> here. </span>
             </Typist>
             <div className="intro-subtitle">
                 I create stuff sometimes.
